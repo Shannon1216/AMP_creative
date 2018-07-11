@@ -1,0 +1,552 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>Story 2</title>
+    <link rel="canonical" href="story-2.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-video"
+        src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-story"
+        src="https://cdn.ampproject.org/v0/amp-story-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+   
+    <style amp-custom>
+      amp-story {
+        font-family: 'Georgia',serif;
+        color: #fff;
+      }
+      amp-story-page {
+        background-color: #A32020;
+      }
+      h1 {
+        font-size: 2.875em;
+        font-weight: normal;
+        line-height: 1.174;
+      }
+      h3 {
+        font-size: 2em;
+        font-weight: normal;
+        line-height: 1.1;
+      }
+      p {
+        font-weight: normal;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #fff;
+      }
+      q {
+        font-weight: 300;
+        font-size: 1.1em;
+      }
+      #cover h1 {
+      font-size: 2.5em;
+      }
+      #page1 {
+        background-color: #f1f1f1;
+      }
+      #page1 h2 {
+        margin-top:15px!important;
+        text-align:left;
+        line-height:1.5;
+        font-size:1.2em;
+        width:80%;
+        color:#E2E2E3;
+      }
+     
+      #page2, #page5 {
+        background-color: #272727;
+        color:#ffffff;
+      }
+      #page2 .top-right {
+        align-content: start;
+        justify-items:right;
+        padding:0px 10px 8px;
+      }
+       #page2 .middle-right {
+          align-content: center;
+          justify-items:right;
+          padding:10px 10px 80px;
+      }
+       #page2 .bottom-right {
+          align-content: end;
+          justify-items: right;
+          padding: 10px 10px 50px;
+      }
+      
+      #page2 .content, #page5 .content {
+        
+        text-align:center;
+        margin-top:22%!important;
+        line-height:1.1;
+        grid-gap:0;
+        
+      }
+      #page2 .content_text, #page5 .content_text {
+        width:151px;
+        color:#ffffff;
+        font-size:1.2em;
+      }
+      #page3 {background-color:#272727;}
+      
+      #page3 h2 {
+        margin-top:20px!important;
+        width:220px;
+        text-align:left;
+        line-height:1.5;
+      } 
+       #page4 {
+        background-color: #F0F1F1;
+      }
+      #page4 .i-amphtml-story-grid-template-vertical {
+      padding: 30px 10px 0px;
+      }
+       #page5 .top-left {
+        align-content: start;
+        justify-items:left;
+        padding:0px 10px 8px;
+      }
+       #page5 .middle-left {
+          align-content: center;
+          justify-items:left;
+          padding:10px 10px 80px;
+      }
+       #page5 .bottom-left {
+          align-content: end;
+          justify-items: left;
+          padding: 10px 10px 50px;
+      }
+     #page6 .i-amphtml-story-grid-template-vertical {
+       padding:0px;
+      }
+      #page6 .i-amphtml-story-grid-template-vertical>*{
+        width:154%;
+        right:75px;
+      }
+      amp-story-grid-layer.bottom {
+        align-content:end;
+      }
+      amp-story-grid-layer.noedge {
+        padding: 0px;
+      }
+      amp-story-grid-layer.center-text {
+        align-content: center;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+      .banner-text {
+        width:64%;
+        margin-left:10%!important;
+        color:#ffffff;
+        line-height: 1.4em;
+        font-weight:bold;
+        font-style:italic;
+        font-size:2.0em;
+      }
+      
+      .whiteBox {
+        width: 85%;
+        margin-right: auto!important;
+        margin-left: auto!important;
+        padding:18px 3% 34px;
+        background-color:rgba(255, 255, 255, 0.8);
+        color:#404041;
+        text-align:center;
+      }
+      .whiteBox p {
+        color:#404041;
+        font-size:1.1em;
+      }
+      .greyBox {
+        position: relative;
+        top: -7%;
+        width:180px;
+        margin-right: auto!important;
+        margin-left: auto!important;
+        background-color:#A32020; 
+        color:#ffffff; 
+        padding:15px;
+        text-align:center;
+        font-weight:bold;
+      }
+     
+      .amp-mode-mouse .amp-carousel-button, amp-carousel[controls] .amp-carousel-button {
+        visibility:hidden;
+      }
+      amp-carousel{min-height:200px;}
+      
+/*----------- iphone 6/7/8 ----------*/        
+      @media (max-width: 413px){
+        #page1 h2 {
+             margin-top:10px!important;
+             line-height:2.0;
+             padding: 0;
+             }
+        .greyBox {
+          padding:10px;
+        }
+        .whiteBox {
+          width:90%;
+          padding:20px 15px 25px;
+        }
+      }
+      
+/*------------ipad---------------*/      
+      @media (min-width: 768px) and (max-width: 1024px){
+       #page1 h2 {
+         font-size:2.1em;
+         line-height:2.5;
+         padding: 0 68px;
+        }
+       #page2 .bottom-right, #page5 .bottom-left {
+         padding-bottom:100px!important;  
+        }
+       #page2 .content_text, #page5 .content_text {
+          width:250px;
+          font-size:1.5em;
+        }
+       #page3 h2 {
+         margin-top:20px!important;
+         width:400px;
+         line-height:1.8;
+       }
+       .whiteBox {
+           margin-top:12%!important;
+        }
+        .whiteBox p {
+        font-size:2.0em;
+        }
+        .greyBox {
+          top: -4%;
+          font-size: 1.5em;
+        }
+        .banner-text {
+          font-size: 2.5em;
+          line-height:1.2em;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <!-- Cover page -->
+    <amp-story standalone bookend-config-src="bookend.json">
+   
+      <amp-story-page id="cover">
+       <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="assets/cover_fallback.jpg"
+                layout="responsive">
+              <source src="assets/workingOverdesk_video.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+      
+      
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <h1 class="lower-third">US Creative Team</h1>
+          <p>We’re a group of fresh-eyed designers and word-whizzes, working for you.</p>
+          <amp-img src="assets/logo_placeholder.png"
+              width="55" height="39">
+          </amp-img>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      
+      <!-- Page 1 (Slide 2) -->
+      <amp-story-page id="page1">
+        
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <amp-anim width="720"
+                    height="516"
+                    layout="responsive"
+          src="assets/gif-animation.gif">
+            <amp-img placeholder
+                     width"720"
+                     height="516"
+                     src="xxx.png">
+            </amp-img>         
+          </amp-anim>
+          </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/page1-overlay.png"
+              width="720" height="1280">
+          </amp-img>
+          </amp-story-grid-layer>
+        
+          <amp-story-grid-layer template="vertical">
+          <h2>As digital storytellers, we bring XxX’s strategic brand, marketing missions and sales objectives to <span style="background-color:#a32020;padding:4px;"> life.</span></h2>
+        </amp-story-grid-layer>
+        
+      </amp-story-page>
+      
+      
+      <!-- Page 2 (Slide 3) -->
+      <amp-story-page id="page2">
+       
+            
+        <amp-story-grid-layer template="fill">
+          <amp-img animate-in="fade-in" animate-in-delay="0.5s" 
+                    width="720"
+                    height="1280"
+                    layout="responsive"
+                    src="assets/gif-rotate.gif">
+          </amp-img>  
+          </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="fill"> 
+            <amp-img animate-in="fade-in" animate-in-delay="1.5s"
+              src="assets/oval-icon.png"
+              width="720" height="1280"
+              layout="responsive">
+            </amp-img>
+          </amp-story-grid-layer>
+        
+         <amp-story-grid-layer template="fill">
+                 <amp-anim animate-in="fade-in" animate-in-delay="2.5s" 
+                    width="720"
+                    height="1280"
+                    layout="responsive"
+                    src="assets/gif-checkmark.gif">
+           <amp-img placeholder
+                    width="720" 
+                    height="1280"
+                    src="assets/gif-checkmark.png">
+           </amp-img>
+         </amp-anim>           
+          </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/circles-left.png"
+               width="720" height="1280"
+              layout="responsive">
+        </amp-img>
+          </amp-story-grid-layer>
+        
+       
+          <amp-story-grid-layer template="vertical" class="content top-right">
+            <div class="content_text" animate-in="fly-in-right" animate-in-delay="0.5s">In turn, our work wins you work.</div>
+          </amp-story-grid-layer>
+        
+         <amp-story-grid-layer template="vertical" class="content middle-right"> 
+            <div class="content_text" animate-in="fly-in-right" animate-in-delay="1.5s">Helps establish authority.</div>
+         </amp-story-grid-layer>
+        
+         <amp-story-grid-layer template="vertical" class="content bottom-right">   
+            <div class="content_text" animate-in="fly-in-right" animate-in-delay="2.5s">Builds trust and loyalty.
+            <br>
+            <span style="color:#E0301E;font-weight:bold;">And conveys your client’s message effectively.</span></div>
+        </amp-story-grid-layer>
+        
+      </amp-story-page>
+      
+      
+      
+      <!-- Page 3 (Slide 4) -->
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="fill">
+           <amp-video autoplay loop
+                width="720" height="1280"
+               poster=""
+                layout="responsive">
+              <source src="assets/complex-video.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+        
+        
+        <amp-story-grid-layer template="fill">
+           <amp-img src="assets/page4_bottom.png"
+              width="720" height="1098">
+          </amp-img>
+        </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="vertical"> 
+        <h2>This next-level storytelling transforms how we talk about complex tools and topics.</h2>
+          </amp-story-grid-layer>
+          
+        <amp-story-grid-layer template="fill">          
+          <amp-img
+              animate-in="fly-in-bottom" animate-in-delay="1.4s" src="assets/page4_bottom-oval.png"
+              width="720" 
+              height="1280"
+              layout="responsive"> 
+          </amp-img>
+        </amp-story-grid-layer>
+        
+      </amp-story-page>
+      
+      
+        <!-- Page 4 (Slide 5) : -->
+      <amp-story-page id="page4">
+        
+        <amp-story-grid-layer template="fill">          
+          <amp-img
+              src="assets/gears-bkgd.jpg"
+              width="720" 
+              height="1280"
+              layout="responsive"> 
+          </amp-img>
+        </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="vertical">
+          
+        <amp-carousel type="slides"
+         width="720"
+         height="500" 
+         layout="responsive"
+         loop
+         autoplay
+         delay="3000">
+          
+     <amp-img src="assets/carousel-1.png"
+    width="720"
+    height="500"
+    layout="responsive">
+          </amp-img>
+          
+    <amp-img src="assets/carousel-4.png"
+    width="720"
+    height="500"
+    layout="responsive">
+          </amp-img>
+          
+     <amp-img src="assets/carousel-2.png"
+    width="720"
+    height="500"
+    layout="responsive">
+          </amp-img>
+          
+     <amp-img src="assets/carousel-5.png"
+    width="720"
+    height="500"
+    layout="responsive">
+          </amp-img>      
+          
+     <amp-img src="assets/carousel-3.png"
+    width="720"
+    height="500"
+    layout="responsive">
+          </amp-img>
+          
+    <amp-img src="assets/carousel-6.png"
+    width="720"
+    height="500"
+    layout="responsive">
+          </amp-img>
+          
+          
+     </amp-carousel>
+           
+          <div class="whiteBox">
+          <p>Using every tool in our arsenal, we build excitement. 
+          <br>Capture your client’s unique vision.
+          <br>And tell their narrative in unexpected, impactful ways.</p>
+          </div>
+          <span class="greyBox">Across all media.</span>
+           
+          
+        </amp-story-grid-layer>
+        
+       
+      </amp-story-page> 
+      
+      
+      
+       <!-- Page 5 (Slide 6) -->
+      <amp-story-page id="page5">
+        
+        
+        <amp-story-grid-layer template="fill">
+          <amp-img
+              animate-in="fly-in-right" animate-in-delay="0.5s" src="assets/top-right-oval.png"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+          </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="fill">
+          <amp-img
+              animate-in="fly-in-right" animate-in-delay="1.5s" src="assets/gif-mid-oval.gif"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+          </amp-story-grid-layer>
+        
+                <amp-story-grid-layer template="fill">
+                 <div animate-in-delay="2.0s" animate-in-duration="30s"
+               class="img-container"> 
+          <amp-img
+              src="assets/bot-pan-strip.png"
+              width="1600" 
+              height="1280"
+              animate-in="pan-right"
+              animate-in-duration="30s"
+              layout="responsive">
+          </amp-img>
+                  </div>
+          </amp-story-grid-layer>
+        
+         <amp-story-grid-layer template="fill">
+          <amp-img
+              src="assets/circles-right.png"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
+          </amp-story-grid-layer>
+        
+       
+          <amp-story-grid-layer template="vertical" class="content top-left">
+            <div class="content_text">Whether you need a compelling infograph</div>
+          </amp-story-grid-layer>
+        
+         <amp-story-grid-layer template="vertical" class="content middle-left"> 
+            <div class="content_text">shareable deck</div>
+         </amp-story-grid-layer>
+        
+         <amp-story-grid-layer template="vertical" class="content bottom-left" animate-in="fade-in" animate-in-delay="2.5s">   
+            <div class="content_text">or polished presentation design
+            <br>
+            <span style="color:#E0301E;font-weight:bold;">we  make it happen.</span></div>
+        </amp-story-grid-layer>
+        
+      </amp-story-page>
+      
+      
+
+      <!-- Page 6 (Slide 7) -->
+      <amp-story-page id="page6">
+        
+        <amp-story-grid-layer template="vertical">
+          <amp-video autoplay loop
+                width="640" height="360"
+                poster="assets/xxx.jpg"
+                layout="responsive">
+              <source src="assets/chart_1.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="fill">
+           <amp-img src="assets/video-cutout.png"
+              width="720" height="1280">
+          </amp-img>
+        </amp-story-grid-layer>
+        
+         
+        
+        <amp-story-grid-layer template="vertical" class="center-text">
+          <p class="banner-text" animate-in="whoosh-in-right" animate-in-delay="1.6s">we do too.</p>
+        </amp-story-grid-layer>
+        
+      </amp-story-page>
+      
+      
+    </amp-story>
+  </body>
+</html>
