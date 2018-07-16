@@ -6,7 +6,7 @@
     "email": true
   },
   "related-articles": {
-    "Learn more about what we do – and why we do it" [
+    "Learn more about what we do – and why we do it": [
       {
         "title": "Portfolio",
         "url": "https://pwc-spark.com/groups/us-creative-team",
@@ -17,8 +17,6 @@
         "url": "https://pwcmktg.attask-ondemand.com/requests",
         "image": "assets/related-2.png"
       }
-      
-      
     ]
   }
 }
