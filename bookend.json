@@ -6,23 +6,19 @@
     "email": true
   },
   "related-articles": {
-    "Let's get started.": [
+    "Learn more about what we do – and why we do it" [
       {
-        "title": "Contact an Account Manager",
-        "url": "https://pwc-spark.com/docs/DOC-787238",
+        "title": "Portfolio",
+        "url": "https://pwc-spark.com/groups/us-creative-team",
         "image": "assets/related-1.png"
       },
       {
-        "title": "Make a request",
+        "title": "Get started. Make a request",
         "url": "https://pwcmktg.attask-ondemand.com/requests",
         "image": "assets/related-2.png"
-      },
-      
-      {
-        "title": "See what we do. For you.",
-        "url": "https://pwc-spark.com/groups/us-creative-team",
-        "image": "assets/related-3.png"
       }
+      
+      
     ]
   }
 }
